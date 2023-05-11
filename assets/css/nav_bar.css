@@ -1,0 +1,33 @@
+nav {
+    background-color: rgb(226, 146, 241);
+    display: flexbox;
+    padding: 1px;
+}
+
+li {
+    vertical-align: middle;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+li:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+#navegador {
+    display: inline-block;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    margin-inline-end: 10rem;
+    margin-right: 20rem;
+    position: fixed;
+    top: 10px;
+    opacity: 0.8;
+}
