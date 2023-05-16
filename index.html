@@ -1,54 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /*GOOGLE FONTS: LIBRE FRANKLIN y ABRIL FATFACE(títulos)*/
-        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Franklin:wght@100;400&display=swap');
-    </style>
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/nav_bar.css">
+    <!--<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/nav_bar.css"-->
     <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styleIndex.css">
+    <script src="assets/js/bienvenida.js"></script>
     <link rel="shortcut icon" href="img/flor.png">
     <title>NÚCLEO DÍGITAL</title>
 </head>
 <body>
-    <header>
-        <nav id="navegador">
-            <ul>
-                <li>
-                    <img src="img/florIcono.png" alt="" width="100px">
+    <header class="hero">
+        <nav class="nav">
+            <div class="nav__logo">
+                <img src="img/florLogo.png" class="nav__logo-img" alt="Logo-ND">
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="index.html" class="nav__links">HOME</a>
                 </li>
-                <li>
-                    <a href="index.html">HOME |</a>
+                <li class="nav__items">
+                    <a href="empresa.html" class="nav__links">LA EMPRESA</a>
+                </li><li class="nav__items">
+                    <a href="portfolio.html" class="nav__links">PORTFOLIO</a>
+                </li><li class="nav__items">
+                    <a href="contacto.html" class="nav__links">CONTACTO</a>
                 </li>
-                <li>
-                    <a href="empresa.html">LA EMPRESA |</a>
-                </li>
-                <li>
-                    <a href="portfolio.html">PORTFOLIO |</a>
-                </li>
-                <li>
-                    <a href="contacto.html">CONTACTO |</a>
-                </li>
+                
+                <img src="img/close.svg" class="nav__close" alt="salir">
             </ul>
+
+            <div class="nav__menu">
+                <img src="img/menu.svg" class="nav__img" alt="menu">
+            </div>
         </nav>
+        <section class="hero__container container">
+            <h1 class="hero__title">NÚCLEO DIGITAL</h1>
+            <p class="hero__paragraph">Acompañamos en la evolución dígital de las empresas y organizaciones.</p>
+            <div class="container2">
+                <p id="demo"></p>
+                <br>
+                <label for="name">Ingresa tu nombre</label>
+                <input type="text" id="nombre" required>
+                <a class="cta" onclick="bienvenida()">Enviar</a>
+            </div>
+        </section>
     </header>
 
     <main>
 
     </main>
 
-    <footer>
-        <ul>
-            <li><a href="mailto:solearena@mail.com">MAIL</a></li>
-        </ul>
-        <div>
-            <p>Copyright © 2023 Núcleo Digital</p>
-        </div>
+    <footer class="footer">
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="img/facebook.svg" alt="logoFacebook" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="img/twitter.svg" alt="logoTwitter" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="img/youtube.svg" alt="logoYoutube" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="img/instagram.svg" alt="logoInstagram" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; NÚCLEO DIGITAL</h3>
+        </section>
     </footer>
 </body>
 </html>
