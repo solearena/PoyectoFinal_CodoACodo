@@ -34,7 +34,35 @@ label{
     }
 }
 
-main > p {
+#flor {
+    animation-duration: 10s;
+    animation-direction: normal;
+    animation-name: slidein2;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 3%;
+    border-radius: 50%;
+  }
+  
+  @keyframes slidein2 {
+    0% {background-color: white;} /*Amarillo*/
+    25% {background-color: #6B33FF;} /*Naranja*/
+    50% {background-color: #000;} /*Negro*/
+    75% {background-color: #6B33FF;} /*Otra vez naranja*/
+    100% {background-color: white;} /*Otra vez amarillo*/
+    from {
+        margin-left: 100%;
+  
+      }
+    
+      to {
+          transform: rotate(360deg);
+      }
+  }
+
+.texto {
+    padding: 0 100px;
+    margin-top: 1.5rem;
     text-align: center;
     font-size: large;
     overflow: hidden;
@@ -102,6 +130,7 @@ main > p {
     cursor: pointer;
 }
 
+
 @media (max-width: 800px){
     .agregar-imagen{
         width: 80%;
@@ -109,10 +138,10 @@ main > p {
     .img_galeria{
         width: 45%;
     }
-    .contenedor-galeria{
+    /* .contenedor-galeria{
         display: grid;
         grid-template-columns: 5fr 5fr 5fr;
-    }
+    } */
 }
 
 @media (max-width: 500px){
