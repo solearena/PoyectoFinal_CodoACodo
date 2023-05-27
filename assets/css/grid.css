@@ -34,12 +34,3 @@ footer {
             "f";
     }
 }
-
-@media (max-width: 200px) {
-    body {
-        grid-template-areas:
-            "h"
-            "m"
-            "f";
-    }
-}
