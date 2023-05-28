@@ -13,9 +13,10 @@ form{
     justify-content: center;
     cursor: pointer;
 }
-    form:hover{
-        box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
-    }
+
+form:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
 
 h2{
     font-size: 40px;
@@ -43,6 +44,7 @@ input,textarea{
     font-family: 'Libre Franklin', sans-serif;
     display: flex;
     flex-direction: column;
+    width: 330px;
 }
 
 select,option{
@@ -72,9 +74,9 @@ select,option{
     text-align: center;
 }
 
-    .btn:hover{
-        background-color: var(--color-rosa);
-    }
+.btn:hover{
+    background-color: var(--color-rosa);
+}
 
 .form-control.valida input{
     border: 0.1px solid;
@@ -112,4 +114,24 @@ select,option{
     color: red;
     font-size: 14px;
     margin-bottom: 5px;
+}
+
+input{
+    height:30px
+}
+
+#c{
+    height:90px
+}
+
+.boton{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 600px){
+    input, textarea{
+        width: 200px;
+    }
+
 }

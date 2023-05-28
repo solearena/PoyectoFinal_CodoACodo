@@ -51,12 +51,11 @@ label{
     75% {background-color: #6B33FF;} /*Otra vez naranja*/
     100% {background-color: white;} /*Otra vez amarillo*/
     from {
-        margin-left: 100%;
-  
+        margin-left: 90%;
       }
     
       to {
-          transform: rotate(360deg);
+        transform: rotate(360deg);
       }
   }
 

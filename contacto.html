@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/estilos.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styleIndex.css">
-    <link rel="stylesheet" href="assets/css/contacto.css"
+    <link rel="stylesheet" href="assets/css/contacto.css">
     <link rel="shortcut icon" href="img/flor.png">
     <title>NÚCLEO DÍGITAL</title>
 </head>
@@ -48,62 +48,67 @@
             <div class="container2">
                 <p id="demo"></p>
                 <br>
-                <a href="#" class="cta">Contactanos</a>
+                <a href="#formulario" class="cta">Contactanos</a>
             </div>
         </section>
     </header>
-    <form action="" method="" id="formulario">
+    <form action="https://formspree.io/f/xqkoogrj" method="POST" id="formulario">
         <div class="input-group">
             <h2>Contacto</h2>
 
             <div class="form-control">
                 <label for="n">Nombre:</label>
-                <input type="text" style="width:330px;height:30px" name="nombre" id="n" placeholder="Nombre"> 
+                <input type="text" name="nombre" id="n" placeholder="Nombre" required> 
                 <p></p>
             </div>
 
             <div class="form-control">
                 <label for="a">Apellido:</label>
-                <input type="text" style="width:330px;height:30px" name="apellido" id="a" placeholder="Apellido"> 
+                <input type="text" name="apellido" id="a" placeholder="Apellido" required> 
                 <p></p>
             </div>
 
             <div class="form-control">
                 <label for="t">Teléfono:</label>
-                <input type="tel" style="width:330px;height:30px" name="telefono" id="t" placeholder="Teléfono"> 
+                <input type="tel" name="telefono" id="t" placeholder="Teléfono"> 
                 <p></p>
             </div>
 
             <div class="form-control">
                 <label for="m">E-Mail:</label>
-                <input type="email" style="width:330px;height:30px" name="mail" id="m" placeholder="E-Mail"> 
+                <input type="email" name="mail" id="m" placeholder="E-Mail" required> 
                 <p></p>
             </div>
 
             <div class="form-control">
                 <label for="c">Consulta:</label>
-                <textarea style="width:330px;height:90px" name="comentario" id="c" placeholder="Escriba su consulta"></textarea> 
+                <textarea name="comentario" id="c" placeholder="Escriba su consulta" required></textarea> 
                 <p></p>
             </div>
-
-            <input type="submit" class="btn" value="Enviar">
-            <input type="reset" class="btn" value="Reestablecer">
+            <div class="boton">
+                <button type="submit" class="btn" value="Enviar"> Enviar </button>
+                <button type="reset" class="btn" value="Restablecer"> Restablecer </button>
+            </div>
 
         </div>
     </form>
     <br>
     <br>
+
+
+    <footer class="footer">
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="img/facebook.svg" alt="logoFacebook" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="img/twitter.svg" alt="logoTwitter" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="img/youtube.svg" alt="logoYoutube" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="img/instagram.svg" alt="logoInstagram" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; NÚCLEO DIGITAL</h3>
+        </section>
+    </footer>
+    <script src="assets/js/formulario.js"></script>
+    <script src="assets/js/menu.js"></script>
 </body>
-
-<footer class="footer">
-    <section class="footer__copy container">
-        <div class="footer__social">
-            <a href="#" class="footer__icons"><img src="img/facebook.svg" alt="logoFacebook" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="img/twitter.svg" alt="logoTwitter" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="img/youtube.svg" alt="logoYoutube" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="img/instagram.svg" alt="logoInstagram" class="footer__img"></a>
-        </div>
-
-        <h3 class="footer__copyright">Derechos reservados &copy; NÚCLEO DIGITAL</h3>
-    </section>
-</footer>
+</html>
